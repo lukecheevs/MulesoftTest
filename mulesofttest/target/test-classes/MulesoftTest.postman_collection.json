@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "09d53b9b-c09e-4968-9c48-29a85f2ccdb2",
+		"name": "MulesoftTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST Test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\t\"message\": \"My body message I sent\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8081/transform",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"transform"
+					]
+				},
+				"description": "for test app"
+			},
+			"response": []
+		},
+		{
+			"name": "GET hello world",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8081/helloworld",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"helloworld"
+					]
+				},
+				"description": "first http request"
+			},
+			"response": []
+		}
+	]
+}
